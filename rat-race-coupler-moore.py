@@ -23,14 +23,11 @@ def main():
 	h = float(sys.argv[2])
 	lamb = float(sys.argv[1])
 	r = 0.75 * lamb/PI
-	bla = numpy.array([[1.0, 1.0], [-1.0, 1.0]])
-	print bla
 	ccw = numpy.array([[cos(PI/2), -sin(PI/2)], [sin(PI/2), cos(PI/2)]])
 	cw = numpy.array([[cos(-PI/2), -sin(-PI/2)], [sin(-PI/2), cos(-PI/2)]])
 	axiom = 'LFL+F+LFL+F'
 	production = { 'L' : '-RF+LFL+FR-',
 		       'R' : '+LF-RFR-FL+'}
-
 	print axiom
 	for x in range(0, depth) :
 		tmp = ''
